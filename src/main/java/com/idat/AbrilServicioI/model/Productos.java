@@ -2,12 +2,22 @@ package com.idat.AbrilServicioI.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table(name = "Productos")
+@Entity
 public class Productos implements Serializable{
 	
 	
 	private static final long serialVersionUID = 5210907974832008085L;
 	
-	private Integer idProducto;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer idProducto;	
 	private String nombreProducto;
 	private String descripcion;
 	private Double precio;
