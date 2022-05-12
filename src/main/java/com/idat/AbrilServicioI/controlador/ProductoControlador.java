@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.idat.AbrilServicioI.dto.ProductoDTORequest;
 import com.idat.AbrilServicioI.dto.ProductoDTOResponse;
-import com.idat.AbrilServicioI.model.Productos;
 import com.idat.AbrilServicioI.servicio.ProductoServicio;
 
 @RestController
